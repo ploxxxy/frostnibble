@@ -1,0 +1,26 @@
+body,
+html {
+  background: #18181a;
+  font-family: sans-serif;
+  color: #dadada;
+}
+
+[data-type='String'] {
+  color: #7cca6c;
+}
+
+[data-type='Integer'] {
+  color: #709aff;
+}
+
+[data-type='Long'] {
+  color: #66d9ef;
+}
+
+[data-type='Float'] {
+  color: #ff7de9;
+}
+
+[data-type='Binary'] {
+  color: #ff9e64;
+}
