@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Assets that shouldn't be checked into git
+public/assets/emblem
+
+.vercel

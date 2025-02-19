@@ -6,6 +6,7 @@ import TopBar, { type FilterOptions } from './components/TopBar'
 import useDebounce from './hooks/useDebounce'
 import css from './lib/css'
 import SaveFile, { Entry } from './lib/save-file'
+import GithubLink from './components/GHLink'
 
 const styleContainer = css`
   display: flex;
@@ -108,7 +109,17 @@ export function App() {
         onDrop={onDrop}
         onDragOver={(e) => e.preventDefault()}
       >
-        <h1>Frostbite Profile Options Editor</h1>
+        <div
+          class={css`
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+          `}
+        >
+          <h1>Frostbite Profile Options Editor</h1>
+          <GithubLink />
+        </div>
         {file && (
           <>
             <div class={styleTopBar}>

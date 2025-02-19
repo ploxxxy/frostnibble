@@ -75,12 +75,12 @@ const PlayerTagsEditor = ({ entry }: { entry: Entry }) => {
             max-height: 160px;
           `}
         >
-          <img src={`/frostnibble/assets/emblem/bg/${bg.name}.jpg`} alt="background" />
+          <img src={`/assets/emblem/bg/${bg.name}.jpg`} alt="background" />
           <img
             class={styleDetail}
-            src={`/frostnibble/assets/emblem/detail/${detail.name}.png`}
+            src={`/assets/emblem/detail/${detail.name}.png`}
             style={{
-              maskImage: `url(/frostnibble/assets/emblem/detail_mask/${detail.name}.png)`,
+              maskImage: `url(/assets/emblem/detail_mask/${detail.name}.png)`,
               maskPosition: 'center',
               maskSize: 'cover',
               maskRepeat: 'no-repeat',
@@ -89,9 +89,9 @@ const PlayerTagsEditor = ({ entry }: { entry: Entry }) => {
           />
           <img
             class={styleDetail}
-            src={`/frostnibble/assets/emblem/frame/${frame.name}.png`}
+            src={`/assets/emblem/frame/${frame.name}.png`}
             style={{
-              maskImage: `url(/frostnibble/assets/emblem/detail_mask/${detail.name}.png), linear-gradient(#000 0 0)`,
+              maskImage: `url(/assets/emblem/detail_mask/${detail.name}.png), linear-gradient(#000 0 0)`,
               maskComposite: 'exclude',
               maskPosition: 'center',
               maskSize: 'cover',
@@ -139,7 +139,7 @@ const TagSelector = ({
       {arr.map((el) => {
         const name = el.name
         const fileType = type === 'bg' ? 'jpg' : 'png'
-        const fileSource = `/frostnibble/assets/emblem/${type}/${name}.${fileType}`
+        const fileSource = `/assets/emblem/${type}/${name}.${fileType}`
 
         return (
           <img
